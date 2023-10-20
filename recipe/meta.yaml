@@ -1,4 +1,4 @@
-{% set version = "1.1.4" %}
+{% set version = "1.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/clinfun_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/clinfun/clinfun_{{ version }}.tar.gz
-  sha256: 80093e3bb5344303a6c195607fce6cf564c5c912e313f23c77ec96b6e9fa51dc
+  sha256: d10699de157ed751f4dc9843b4fc03d54f66f5dc764871cdbe891d9d847c4b37
 
 build:
   merge_build_host: true  # [win]
